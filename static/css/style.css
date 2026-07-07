@@ -15,15 +15,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 40px 55px;
-
     z-index: 100;
 }
 
@@ -35,7 +31,6 @@ body {
     display: flex;
     align-items: center;
     gap: 18px;
-
     color: white;
     font-size: 12px;
     letter-spacing: 3px;
@@ -50,7 +45,6 @@ body {
 .hamburger span {
     width: 26px;
     height: 2px;
-
     background: white;
 }
 
