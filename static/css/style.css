@@ -1,11 +1,55 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#05070b;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    background: #05070b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 55px;
+
+    z-index: 100;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 2px;
+
+    background: white;
 }
