@@ -1,3 +1,45 @@
 .hero{
-    min-height:100vh;
+    position:relative;
+    height:100vh;
+
+    background-image:url("../images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+}
+
+.hero h1{
+
+    font-size:6rem;
+    font-weight:300;
+    line-height:1;
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    max-width:520px;
 }
