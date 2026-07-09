@@ -1,9 +1,6 @@
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url("../images/hero.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +13,14 @@
     background: rgba(0, 0, 0, .45);
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
+.hero-content{
+    width:700px;
+    max-width:90%;
+    position:relative;
+    z-index:5;
+    text-align:center;
+    transform:translateY(-40px);
+    animation:fadeUp 1.2s ease;
 }
 
 .hero h1 {
@@ -161,4 +162,28 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    animation: heroZoom 12s ease forwards;
+    z-index: -1;
+}
+
+@keyframes heroZoom {
+
+    from {
+        transform: scale(1.08);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
 }
