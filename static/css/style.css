@@ -25,7 +25,20 @@
     height: auto;
     display: block;
 }
-
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 .hero-content {
     position: relative;
     z-index: 5;
