@@ -7,9 +7,8 @@
 body {
     background: #05070b;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-
 
 .navbar {
     position: absolute;
@@ -23,17 +22,35 @@ body {
     z-index: 100;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     width: 80px;
+    display: block;
+    transition: transform .3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .menu {
     display: flex;
     align-items: center;
     gap: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
     color: white;
+    cursor: pointer;
+    font-family: inherit;
     font-size: 12px;
+    font-weight: 500;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .hamburger {
@@ -46,10 +63,13 @@ body {
     width: 26px;
     height: 2px;
     background: white;
+    transition: all .3s ease;
 }
 
-body {
-    background: #05070b;
-    color: white;
-    font-family: "Inter", sans-serif;
+.menu:hover .hamburger span:first-child {
+    transform: translateX(-6px);
+}
+
+.menu:hover .hamburger span:last-child {
+    transform: translateX(6px);
 }

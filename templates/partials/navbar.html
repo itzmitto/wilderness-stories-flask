@@ -1,16 +1,18 @@
 <nav class="navbar">
 
-    <div class="logo">
-        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo">
-    </div>
+    <a href="/" class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wilderness Stories Logo">
+    </a>
 
-    <div class="menu">
+    <button class="menu" aria-label="Open menu">
+
         <span>MENU</span>
 
         <div class="hamburger">
             <span></span>
             <span></span>
         </div>
-    </div>
+
+    </button>
 
 </nav>
