@@ -38,4 +38,34 @@
         <a href="#">Discover Story</a>
     </div>
 </section>
+<section class="story story-reverse reveal">
+    <div class="story-content">
+        <span class="number">02</span>
+        <h2>Into the <br>Blue Depths</h2>
+        <p>Beneath the ocean surface lies a world filled with
+            mystery, vibrant ecosystems and incredible creatures
+            that are still waiting to be discovered.</p>
+        <a href="#">Discover Story</a>
+    </div>
+    <div class="story-image">
+        <img src="{{ url_for('static', filename='images/ocean.jpg') }}" alt="Ocean">
+    </div>
+</section>
+<section class="story reveal">
+    <div class="story-image">
+        <img src="{{ url_for('static', filename='images/desert.jpg') }}" alt="Desert">
+    </div>
+    <div class="story-content">
+        <span class="number">03</span>
+        <h2>Endless<br>Dunes</h2>
+        <p>The desert is a place of silence, endless horizons
+            and extraordinary resilience where life survives
+            against all odds.</p>
+        <a href="#">Discover Story</a>
+    </div>
+</section>
+<section class="cta">
+    <h2>Every journey starts with curiosity.</h2>
+    <a href="#">Start Exploring</a>
+</section>
 {% endblock %}
