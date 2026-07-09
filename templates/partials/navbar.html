@@ -2,7 +2,7 @@
     <a href="/" class="logo">
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Wilderness Stories Logo">
     </a>
-    <button class="menu" aria-label="Open menu">
+    <button class="menu" id="menuButton" aria-label="Open menu">
         <span>MENU</span>
         <div class="hamburger">
             <span></span>
@@ -10,3 +10,13 @@
         </div>
     </button>
 </nav>
+<div class="fullscreen-menu" id="fullscreenMenu">
+    <button class="close-btn" id="closeButton">✕</button>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forest</a></li>
+        <li><a href="#">Ocean</a></li>
+        <li><a href="#">Desert</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>

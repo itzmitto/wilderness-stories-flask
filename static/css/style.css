@@ -221,7 +221,6 @@
 }
 
 @keyframes fadeLogo {
-
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -232,4 +231,54 @@
         transform: translateY(0);
     }
 
+}
+
+.fullscreen-menu {
+    position: fixed;
+    inset: 0;
+    background: #05070b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    z-index: 999;
+}
+
+.fullscreen-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-menu li {
+    margin: 35px 0;
+}
+
+.fullscreen-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 72px;
+    transition: .3s;
+}
+
+.fullscreen-menu a:hover {
+    letter-spacing: 6px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 45px;
+    right: 60px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 34px;
 }
