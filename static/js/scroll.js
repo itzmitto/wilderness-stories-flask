@@ -25,3 +25,16 @@ window.addEventListener("scroll", () => {
         );
     }
 });
+
+gsap.utils.toArray(".story").forEach((story) => {
+    gsap.from(story, {
+        scrollTrigger: {
+            trigger: story,
+            start: "top 75%"
+        },
+        y: 120,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out"
+    });
+});
