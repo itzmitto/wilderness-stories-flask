@@ -1,28 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wilderness Stories</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-    {% include 'partials/navbar.html' %}
-    {% block content %}
-    {% endblock %}
-    {% include 'partials/footer.html' %}
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="{{ url_for('home') }}" class="brand">Wilderness</a>
+        <div class="nav-links">
+            <a href="#story">Stories</a>
+            <a href="#ocean">Ocean</a>
+            <a href="#desert">Desert</a>
+        </div>
+        <button class="menu-button" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">
+        <p>2026 Wilderness Stories. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="#">About</a>
+            <a href="#">Expeditions</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 </body>
+
 </html>
