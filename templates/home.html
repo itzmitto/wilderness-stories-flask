@@ -1,71 +1,71 @@
-{% extends "layouts/base.html" %}
-{% block content %}
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-left">
-        <span>INTRO</span>
-        <div class="indicator">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <div class="line"></div>
+    {% extends "layouts/base.html" %}
+    {% block content %}
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-left">
+            <span>INTRO</span>
+            <div class="indicator">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="line"></div>
+            </div>
         </div>
-    </div>
-    <div class="hero-content parallax-content">
-        <span class="hero-tag">WILDERNESS STORIES</span>
-        <h1>Beyond <br>the Horizon</h1>
-        <p>Discover untouched landscapes, hidden wildlife,
-            and the stories that connect us with the last
-            wild places on Earth.</p>
-        <a href="#story" class="hero-btn">Explore Stories</a>
-    </div>
-    <div class="hero-right">
-        <span>SCROLL</span>
-        <div class="scroll-line"></div>
-    </div>
-</section>
-<section id="story" class="story reveal">
-    <div class="story-image">
-        <img src="{{ url_for('static', filename='images/forest.jpg') }}" alt="Forest">
-    </div>
-    <div class="story-content">
-        <span class="number">01</span>
-        <h2>The Forest <br>Breathes</h2>
-        <p>Ancient forests are among Earth's oldest living
-            ecosystems. They regulate the climate, provide
-            shelter for countless species and remind us how
-            powerful untouched nature can be.</p>
-        <a href="#">Discover Story</a>
-    </div>
-</section>
-<section class="story story-reverse reveal">
-    <div class="story-content">
-        <span class="number">02</span>
-        <h2>Into the <br>Blue Depths</h2>
-        <p>Beneath the ocean surface lies a world filled with
-            mystery, vibrant ecosystems and incredible creatures
-            that are still waiting to be discovered.</p>
-        <a href="#">Discover Story</a>
-    </div>
-    <div class="story-image">
-        <img src="{{ url_for('static', filename='images/ocean.jpg') }}" alt="Ocean">
-    </div>
-</section>
-<section class="story reveal">
-    <div class="story-image">
-        <img src="{{ url_for('static', filename='images/desert.jpg') }}" alt="Desert">
-    </div>
-    <div class="story-content">
-        <span class="number">03</span>
-        <h2>Endless <br>Dunes</h2>
-        <p>The desert is a place of silence, endless horizons
-            and extraordinary resilience where life survives
-            against all odds.</p>
-        <a href="#">Discover Story</a>
-    </div>
-</section>
-<section class="cta">
-    <h2>Every journey starts with curiosity.</h2>
-    <a href="#">Start Exploring</a>
-</section>
-{% endblock %}
+        <div class="hero-content parallax-content">
+            <span class="hero-tag">WILDERNESS STORIES</span>
+            <h1>Beyond <br>the Horizon</h1>
+            <p>Discover untouched landscapes, hidden wildlife,
+                and the stories that connect us with the last
+                wild places on Earth.</p>
+            <a href="#story" class="hero-btn">Explore Stories</a>
+        </div>
+        <div class="hero-right">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    <section id="story" class="story reveal">
+        <div class="story-image">
+            <img src="{{ url_for('static', filename='images/forest.jpg') }}" alt="Forest">
+        </div>
+        <div class="story-content">
+            <span class="number">01</span>
+            <h2>The Forest <br>Breathes</h2>
+            <p>Ancient forests are among Earth's oldest living
+                ecosystems. They regulate the climate, provide
+                shelter for countless species and remind us how
+                powerful untouched nature can be.</p>
+            <a href="#">Discover Story</a>
+        </div>
+    </section>
+    <section class="story story-reverse reveal">
+        <div class="story-content">
+            <span class="number">02</span>
+            <h2>Into the <br>Blue Depths</h2>
+            <p>Beneath the ocean surface lies a world filled with
+                mystery, vibrant ecosystems and incredible creatures
+                that are still waiting to be discovered.</p>
+            <a href="#">Discover Story</a>
+        </div>
+        <div class="story-image">
+            <img src="{{ url_for('static', filename='images/ocean.jpg') }}" alt="Ocean">
+        </div>
+    </section>
+    <section class="story reveal">
+        <div class="story-image">
+            <img src="{{ url_for('static', filename='images/desert.jpg') }}" alt="Desert">
+        </div>
+        <div class="story-content">
+            <span class="number">03</span>
+            <h2>Endless <br>Dunes</h2>
+            <p>The desert is a place of silence, endless horizons
+                and extraordinary resilience where life survives
+                against all odds.</p>
+            <a href="#">Discover Story</a>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Every journey starts with curiosity.</h2>
+        <a href="#">Start Exploring</a>
+    </section>
+    {% endblock %}
